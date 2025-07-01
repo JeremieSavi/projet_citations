@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de citation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        button{
+            cursor: pointer;
+        }
+        
+       
+        .container{
+            
+            width: 100VW;
+            height: 100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(25, 103, 227); 
+
+        }
+        .container .citation_content{
+            text-align: center;
+            line-height: 1.2;
+            margin-top: 50px;
+            width:500px;
+            height:100px;
+            padding:20px;
+            border-radius: 10px;
+            background-color:white;
+
+        }
+        .citation_content p{
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(25, 103, 227);
+
+        }
+        .button_nouvelle_citation{
+            margin-top: 20px;
+            border: none;
+            padding:10px 20px;
+            background-color: white;
+            color:rgb(25, 103, 227);
+            border-radius: 7px;
+        }
+        
+        h4{
+            margin-top:10px;
+        }
+        .titre {
+            
+            position: absolute;
+            color: aliceblue;
+            
+            top:40px;
+            left: 33vw;
+            padding-top: 90px;
+            
+            
+            text-align: center;
+        }
+        @media  (max-width:900px) {
+            .titre{
+                left: 20vw;
+                
+            
+            }
+            
+            
+        }
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="titre">
+        <h2>Bienvenue 👋 Générer des ciataions</h2>
+        <p>Apuyer sur le boutton pour générer des citations et repartez confiant <br> Prêt à briller </p>
+    </div>    
+    <div class="container">
+
+        <div class="citation_content">    
+            <p>Celui qui lit les livres traverse les âges</p>
+            <h4>Armelle Savi </h4>
+        </div>
+        <button class="button_nouvelle_citation" onclick="afficherCitation()">Nouvelle citation</button>
+
+        <!-- <h4>©</h4> -->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
