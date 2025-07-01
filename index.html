@@ -11,8 +11,14 @@
             box-sizing: border-box;
             
         }
+        body{
+            overflow-y: hidden;
+        }
         button{
             cursor: pointer;
+        }
+        h2,h4{
+            margin-bottom: 10px;
         }
         
        
@@ -38,6 +44,10 @@
             background-color:white;
 
         }
+        .container .citation_content h4{
+            font-family:ser;
+            margin-top:10px;
+        }
         .citation_content p{
             text-align: center;
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -54,7 +64,8 @@
         }
         
         h4{
-            margin-top:10px;
+            
+
         }
         .titre {
             
@@ -70,9 +81,14 @@
         }
         @media  (max-width:900px) {
             .titre{
-                left: 20vw;
+                left:10vw;
+                margin-bottom: 20px;
                 
             
+            }
+            .container .citation_content{
+                margin:0 20px;
+                width:80%;
             }
             
             
